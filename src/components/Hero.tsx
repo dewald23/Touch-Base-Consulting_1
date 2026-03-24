@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export function Hero() {
@@ -51,16 +51,21 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Link
-              to="/contact"
-              className="w-full sm:w-auto px-8 py-4 rounded-full bg-brand-gold text-white font-semibold hover:bg-brand-gold-light transition-colors flex items-center justify-center gap-2 group"
+            <a
+              href="https://wa.me/27750908984"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Chat with us on WhatsApp"
+              aria-label="Message +27 75 090 8984 via WhatsApp"
+              className="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-brand-green-dark font-bold hover:-translate-y-1 transition-transform flex items-center justify-center gap-2 group min-h-[44px]"
+              style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
             >
+              <MessageCircle className="w-5 h-5" />
               Start Your Project
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
+            </a>
             <Link
               to="/services"
-              className="w-full sm:w-auto px-8 py-4 rounded-full bg-white/5 text-white font-semibold hover:bg-brand-gold/10 transition-colors border border-white/10 flex items-center justify-center"
+              className="w-full sm:w-auto px-8 py-4 rounded-full bg-white/5 text-white font-semibold hover:bg-brand-gold/10 transition-colors border border-white/10 flex items-center justify-center min-h-[44px]"
             >
               Explore Services
             </Link>

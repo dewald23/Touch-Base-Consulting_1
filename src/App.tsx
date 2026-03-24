@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
+import { ContactSupport } from './components/ContactSupport';
 import { Home } from './pages/Home';
 import { ServicesPage } from './pages/ServicesPage';
 import { About } from './pages/About';
@@ -33,6 +34,7 @@ export default function App() {
             <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>
         </main>
+        <ContactSupport />
         <Footer />
       </div>
     </Router>

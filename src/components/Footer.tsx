@@ -41,7 +41,27 @@ export function Footer() {
           <div>
             <h4 className="text-white font-bold mb-6">Legal & Contact</h4>
             <ul className="space-y-4">
-              <li><a href="mailto:hello@touchbaseconsulting.co.za" className="text-slate-400 hover:text-brand-gold transition-colors">hello@touchbaseconsulting.co.za</a></li>
+              <li>
+                <a 
+                  href="mailto:customerservice@touchbaseconsulting.co.za" 
+                  rel="noopener noreferrer"
+                  className="text-slate-400 hover:text-brand-gold transition-colors break-words"
+                >
+                  customerservice@touchbaseconsulting.co.za
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://wa.me/27750908984" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Chat with us on WhatsApp"
+                  aria-label="Message +27 75 090 8984 via WhatsApp"
+                  className="text-slate-400 hover:text-brand-gold transition-colors"
+                >
+                  WhatsApp: +27 75 090 8984
+                </a>
+              </li>
               <li><span className="text-slate-400">Hermanus, Overberg</span></li>
               <li><Link to="/about" className="text-slate-400 hover:text-brand-gold transition-colors">Privacy Policy</Link></li>
               <li><Link to="/about" className="text-slate-400 hover:text-brand-gold transition-colors">Terms of Service</Link></li>

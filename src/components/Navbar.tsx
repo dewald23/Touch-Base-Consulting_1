@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, MessageCircle } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { Logo } from './Logo';
 
@@ -49,12 +49,18 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Link
-            to="/contact"
-            className="px-5 py-2.5 rounded-full bg-brand-gold text-white text-sm font-semibold hover:bg-brand-gold-light transition-colors"
+          <a
+            href="https://wa.me/27750908984"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Chat with us on WhatsApp"
+            aria-label="Message +27 75 090 8984 via WhatsApp"
+            className="flex items-center justify-center gap-2 bg-white text-brand-green-dark px-5 py-2.5 rounded-full text-sm font-bold transition-transform hover:-translate-y-0.5 min-h-[44px]"
+            style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
           >
-            Let's Talk
-          </Link>
+            <MessageCircle className="w-4 h-4" />
+            <span>WhatsApp Us</span>
+          </a>
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -83,13 +89,19 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Link
-            to="/contact"
+          <a
+            href="https://wa.me/27750908984"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Chat with us on WhatsApp"
+            aria-label="Message +27 75 090 8984 via WhatsApp"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="mt-4 px-5 py-3 rounded-xl bg-brand-gold text-white text-center font-semibold hover:bg-brand-gold-light transition-colors"
+            className="mt-4 flex items-center justify-center gap-2 bg-white text-brand-green-dark px-5 py-3 rounded-xl text-center font-bold transition-transform hover:-translate-y-0.5 min-h-[44px]"
+            style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
           >
-            Let's Talk
-          </Link>
+            <MessageCircle className="w-5 h-5" />
+            <span>WhatsApp Us</span>
+          </a>
         </motion.div>
       )}
     </header>

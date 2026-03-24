@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowRight, Mail } from 'lucide-react';
+import { Mail, MessageCircle } from 'lucide-react';
 
 export function CTA() {
   return (
@@ -38,12 +38,25 @@ export function CTA() {
           className="flex flex-col sm:flex-row items-center justify-center gap-6"
         >
           <a
-            href="mailto:hello@touchbaseconsulting.co.za"
-            className="w-full sm:w-auto px-8 py-4 rounded-full bg-brand-gold text-white font-bold text-lg hover:bg-brand-gold-light transition-colors flex items-center justify-center gap-3 group shadow-xl shadow-brand-gold/20"
+            href="https://wa.me/27750908984"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Chat with us on WhatsApp"
+            aria-label="Message +27 75 090 8984 via WhatsApp"
+            className="flex items-center justify-center gap-3 bg-white text-brand-green-dark px-8 py-4 rounded-full font-bold transition-transform hover:-translate-y-1 w-full sm:w-auto min-h-[44px]"
+            style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
+          >
+            <MessageCircle className="w-5 h-5" />
+            <span>WhatsApp Us</span>
+          </a>
+          <a
+            href="mailto:customerservice@touchbaseconsulting.co.za"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 bg-white text-brand-green-dark px-8 py-4 rounded-full font-bold transition-transform hover:-translate-y-1 w-full sm:w-auto min-h-[44px]"
+            style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}
           >
             <Mail className="w-5 h-5" />
-            Contact Us Today
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <span>Email Support</span>
           </a>
         </motion.div>
       </div>
