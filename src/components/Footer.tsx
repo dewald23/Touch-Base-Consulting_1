@@ -23,10 +23,10 @@ export function Footer() {
           <div>
             <h4 className="text-white font-bold mb-6 uppercase text-sm tracking-wider">Solutions</h4>
             <ul className="space-y-4">
-              <li><Link to="/services" className="text-[#E0E0E0] hover:text-white transition-colors">AI Web Design</Link></li>
-              <li><Link to="/services" className="text-[#E0E0E0] hover:text-white transition-colors">Precision SEO</Link></li>
-              <li><Link to="/services" className="text-[#E0E0E0] hover:text-white transition-colors">Content Strategy</Link></li>
-              <li><Link to="/services" className="text-[#E0E0E0] hover:text-white transition-colors">Data Analytics</Link></li>
+              <li><Link to="/services/ai-web-design" className="text-[#E0E0E0] hover:text-white transition-colors">AI Web Design</Link></li>
+              <li><Link to="/services/precision-seo" className="text-[#E0E0E0] hover:text-white transition-colors">Precision SEO</Link></li>
+              <li><Link to="/services/content-strategy" className="text-[#E0E0E0] hover:text-white transition-colors">Content Strategy</Link></li>
+              <li><Link to="/services/data-analytics" className="text-[#E0E0E0] hover:text-white transition-colors">Data Analytics</Link></li>
             </ul>
           </div>
 

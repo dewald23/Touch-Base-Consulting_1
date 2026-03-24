@@ -10,6 +10,10 @@ import { Privacy } from './pages/Privacy';
 import { Terms } from './pages/Terms';
 import { BlogList } from './pages/BlogList';
 import { BlogPost } from './pages/BlogPost';
+import { AiWebDesign } from './pages/AiWebDesign';
+import { PrecisionSeo } from './pages/PrecisionSeo';
+import { ContentStrategy } from './pages/ContentStrategy';
+import { DataAnalytics } from './pages/DataAnalytics';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -29,6 +33,10 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<ServicesPage />} />
+            <Route path="/services/ai-web-design" element={<AiWebDesign />} />
+            <Route path="/services/precision-seo" element={<PrecisionSeo />} />
+            <Route path="/services/content-strategy" element={<ContentStrategy />} />
+            <Route path="/services/data-analytics" element={<DataAnalytics />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<Privacy />} />
