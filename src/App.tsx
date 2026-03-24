@@ -6,6 +6,8 @@ import { Home } from './pages/Home';
 import { ServicesPage } from './pages/ServicesPage';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
+import { Privacy } from './pages/Privacy';
+import { Terms } from './pages/Terms';
 import { BlogList } from './pages/BlogList';
 import { BlogPost } from './pages/BlogPost';
 
@@ -29,6 +31,8 @@ export default function App() {
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
             <Route path="/blog" element={<BlogList />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>
