@@ -79,6 +79,7 @@ export function Approach() {
                   alt="Data Analysis Dashboard" 
                   className="object-cover w-full h-full opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-700"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-green-dark via-transparent to-transparent" />
               </div>

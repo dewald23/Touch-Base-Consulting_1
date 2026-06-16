@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
 import { ArrowLeft, MapPin, Code2, TrendingUp, CheckCircle2 } from 'lucide-react';
+import { SEO } from '../components/SEO';
 
 export function PrecisionSeo() {
   return (
     <div className="min-h-screen bg-white text-brand-green-dark pt-32 pb-20">
+      <SEO 
+        title="Precision SEO Hermanus" 
+        description="Expert SEO strategies for Hermanus & Overberg businesses. Land at the top of Google search using technical audits and local citation builder."
+        url="https://touchbaseconsulting.co.za/services/precision-seo"
+      />
       <div className="max-w-4xl mx-auto px-6">
         <Link 
           to="/" 

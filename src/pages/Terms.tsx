@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
+import { SEO } from '../components/SEO';
 
 export function Terms() {
   return (
     <div className="min-h-screen bg-white text-brand-green-dark pt-32 pb-20">
+      <SEO 
+        title="Terms of Service" 
+        description="Terms of Service and conditions for engaging our digital marketing and web development services in Hermanus, Overberg."
+        url="https://touchbaseconsulting.co.za/terms"
+      />
       <div className="max-w-4xl mx-auto px-6">
         <Link 
           to="/" 

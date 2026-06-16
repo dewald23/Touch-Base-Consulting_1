@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
 import { ArrowLeft, PenTool, BookOpen, Layers, CheckCircle2 } from 'lucide-react';
+import { SEO } from '../components/SEO';
 
 export function ContentStrategy() {
   return (
     <div className="min-h-screen bg-white text-brand-green-dark pt-32 pb-20">
+      <SEO 
+        title="Content Strategy & Copywriting" 
+        description="Establish consistent messaging across your channels. Expert copy, AI-assisted writing, and local brand storytelling in Hermanus and Overberg."
+        url="https://touchbaseconsulting.co.za/services/content-strategy"
+      />
       <div className="max-w-4xl mx-auto px-6">
         <Link 
           to="/" 

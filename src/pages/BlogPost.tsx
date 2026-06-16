@@ -21,6 +21,7 @@ export function BlogPost() {
         title={post.title} 
         description={post.excerpt}
         image={post.imageUrl}
+        url={`https://touchbaseconsulting.co.za/blog/${post.slug}`}
       />
       
       {/* Hero Section */}
@@ -75,6 +76,7 @@ export function BlogPost() {
               alt={post.title} 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
+              loading="lazy"
             />
           </motion.div>
         </div>

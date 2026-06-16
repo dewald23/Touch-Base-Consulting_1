@@ -9,8 +9,8 @@ export function BlogList() {
   return (
     <div className="pt-20">
       <SEO 
-        title="Blog & Insights" 
-        description="Expert local SEO strategies and digital marketing insights for Hermanus and Overberg businesses."
+        title="Digital Marketing Blog" 
+        description="Expert SEO insights and local digital marketing strategies to grow your business in Hermanus and Overberg. Read our latest articles and tips."
       />
       
       {/* Header Section */}
@@ -53,6 +53,7 @@ export function BlogList() {
                     alt={post.title}
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                     referrerPolicy="no-referrer"
+                    loading="lazy"
                   />
                   <div className="absolute top-4 left-4 z-20">
                     <span className="bg-brand-gold text-brand-green text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">

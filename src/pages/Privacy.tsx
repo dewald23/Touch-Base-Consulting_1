@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
+import { SEO } from '../components/SEO';
 
 export function Privacy() {
   return (
     <div className="min-h-screen bg-white text-brand-green-dark pt-32 pb-20">
+      <SEO 
+        title="Privacy Policy" 
+        description="Read our POPIA compliance privacy statement. We protect your personal data and digital privacy at Touch Base Consulting, Hermanus."
+        url="https://touchbaseconsulting.co.za/privacy"
+      />
       <div className="max-w-4xl mx-auto px-6">
         <Link 
           to="/" 

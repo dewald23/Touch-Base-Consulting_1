@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
 import { ArrowLeft, BarChart3, Target, Lightbulb, CheckCircle2 } from 'lucide-react';
+import { SEO } from '../components/SEO';
 
 export function DataAnalytics() {
   return (
     <div className="min-h-screen bg-white text-brand-green-dark pt-32 pb-20">
+      <SEO 
+        title="Google Analytics & GA4 Trackers" 
+        description="Advanced Google Analytics 4 setup, pixel integrations, local conversion tracking, and campaign ROI dashboard reporting in Hermanus & Overberg."
+        url="https://touchbaseconsulting.co.za/services/data-analytics"
+      />
       <div className="max-w-4xl mx-auto px-6">
         <Link 
           to="/" 

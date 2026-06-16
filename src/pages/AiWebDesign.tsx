@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Layout, Smartphone, Edit3, CheckCircle2 } from 'lucide-react';
+import { SEO } from '../components/SEO';
 
 export function AiWebDesign() {
   return (
     <div className="min-h-screen bg-white text-brand-green-dark pt-32 pb-20">
+      <SEO 
+        title="AI Web Design Hermanus" 
+        description="Modern, conversion-optimized, mobile-first websites powered by scaling AI. Grow your digital presence in Hermanus & Overberg."
+        url="https://touchbaseconsulting.co.za/services/ai-web-design"
+      />
       <div className="max-w-4xl mx-auto px-6">
         <Link 
           to="/" 

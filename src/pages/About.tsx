@@ -6,8 +6,8 @@ export function About() {
   return (
     <div className="min-h-screen bg-white text-brand-green-dark pt-32 pb-20">
       <SEO 
-        title="About Us | Touch Base Consulting" 
-        description="Strategy Meets Clarity. We bridge the gap between technical digital marketing and human-centric communication."
+        title="About Digital Agency | Touch Base Consulting" 
+        description="Strategy Meets Clarity. Our digital marketing agency in Hermanus combines deep Overberg audience insights with high-tech SEO and design execution."
       />
       
       <div className="max-w-7xl mx-auto px-6">
